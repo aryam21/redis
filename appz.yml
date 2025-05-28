@@ -15,4 +15,4 @@
         replicas: 1
         port:
         - 6379
-        revision : 1
+        revision : 2
