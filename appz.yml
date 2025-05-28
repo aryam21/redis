@@ -1,0 +1,18 @@
+    app:
+        name: redis
+        code: REDIS
+        notify: aramanan@ecloudcontrol.com
+        
+    build:
+        version: 7.0
+        env: DEV
+        build_file: none
+        output_files: output/*.zip
+        image_template: redis-7.0
+        
+    deploy:
+        context: aryam21/DEV
+        replicas: 1
+        port:
+        - 6379
+        revision : 0
